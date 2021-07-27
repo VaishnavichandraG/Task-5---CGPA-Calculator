@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>CGPA Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sem">
+            <h1>Previous Semesters' Details</h1>
+            <div class="form">
+                <input id="semnum" type="text" placeholder="Semester Number">
+                <input id="credits1" type="number" placeholder="Credits">
+                <input id="gp1" type="number" placeholder="CGPA">
+                <input id="add1" class="btn" type="button" value="Add">
+            </div>
+        </div>
+
+        <div class="course">
+            <h1>Current Courses</h1>
+            <div class="form">
+                <input id="coursecode" type="text" placeholder="Course Code">
+                <input id="credits" type="number" placeholder="Credits">
+                <input id="gp" type="number" placeholder="Grade Points">
+                <input id="add" class="btn" type="button" value="Add">
+            </div>
+        </div>
+
+        <table id="table" class="display-none">
+            <thead>
+                <th>Course Code/ Sem Number</th>
+                <th>Credits</th>
+                <th>Grade Points</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+
+        <div class="result">
+            <div class="cgp">
+                <div class="total">CGPA :  </div>
+                <div id="cgpa"></div>
+            </div>
+            <div class="creds">
+                <div class="total">Total Credits :  </div>
+                <div id="totcreds"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./app.js"></script>
+</html>
