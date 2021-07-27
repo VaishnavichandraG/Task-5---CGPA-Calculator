@@ -72,6 +72,13 @@ table{
     font-family: "Poppins", sans-serif;
 }
 
+td{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
 .result {
     display: flex;
     justify-content:space-around;
